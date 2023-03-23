@@ -1,17 +1,18 @@
 #include "main.h"
 /**
- * print_line - prints a straight line using '-'
- * @n: the number of '-' to be printed
- */
+* print_line - draws a straight line in the terminal
+* @n: lines
+* Description: draws a straight line in the terminal
+*/
 void print_line(int n)
 {
-	int len;
+	int i;
 
-	if (n > 0)
+	i = 0;
+	while (i < n)
 	{
-		for (len = 0; len < n; len++)
-			_putchar('-');
+		_putchar('_');
+		i++;
 	}
-
 	_putchar('\n');
 }
